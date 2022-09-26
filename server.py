@@ -21,7 +21,8 @@ def proceso():
     session['nombre'] = request.form['nombre']
     session['apellido'] = request.form['apellido']
     session['email'] = request.form['email']
-    
+    session['tipo_usuario'] = request.form['tipo_usuario']
+
     return redirect('/exito') #la redireccion nos lleva a la nueva URL
 
 @app.route('/exito')
